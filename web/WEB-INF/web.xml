@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>MainPage</servlet-name>
+        <servlet-class>lessonFirst.MainPage</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MainPage</servlet-name>
+        <url-pattern>/MainPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Catalog</servlet-name>
+        <servlet-class>lessonFirst.Catalog</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Catalog</servlet-name>
+        <url-pattern>/Catalog</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Product</servlet-name>
+        <servlet-class>lessonFirst.Product</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Product</servlet-name>
+        <url-pattern>/Product</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Card</servlet-name>
+        <servlet-class>lessonFirst.Card</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Card</servlet-name>
+        <url-pattern>/Card</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Order</servlet-name>
+        <servlet-class>lessonFirst.Order</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Order</servlet-name>
+        <url-pattern>/Order</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/lessonFirst.Error404Handler</location>
+    </error-page>
+
+    <error-page>
+        <error-code>403</error-code>
+        <location>/lessonFirst.Error403Handler</location>
+    </error-page>
+
+    <filter>
+        <filter-name>CardFilter</filter-name>
+        <filter-class>lessonFirst.CardFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CardFilter</filter-name>
+        <url-pattern>/lessonFirst.CardFilter</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>CatalogFilter</filter-name>
+        <filter-class>lessonFirst.CatalogFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CatalogFilter</filter-name>
+        <url-pattern>/lessonFirst.CatalogFilter</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>MainPageFilter</filter-name>
+        <filter-class>lessonFirst.MainPageFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>MainPageFilter</filter-name>
+        <url-pattern>/lessonFirst.MainPageFilter</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>OrderFilter</filter-name>
+        <filter-class>lessonFirst.OrderFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>OrderFilter</filter-name>
+        <url-pattern>/lessonFirst.OrderFilter</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>ProductFilter</filter-name>
+        <filter-class>lessonFirst.ProductFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ProductFilter</filter-name>
+        <url-pattern>/lessonFirst.ProductFilter</url-pattern>
+    </filter-mapping>
+</web-app>
