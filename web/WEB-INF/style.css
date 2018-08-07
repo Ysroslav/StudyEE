@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+.container{
+    max-width:1366px;
+    margin:0 auto;
+    min-height: 100%;
+    display:flex;
+    flex-direction:column;
+}
+.content{
+    flex:1;
+}
+.my-products-box{
+    padding-top:50px;
+    padding-bottom:50px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.product{
+    position:relative;
+}
+.padding-site{
+    padding-left:98px;
+    padding-right:98px;
+}
